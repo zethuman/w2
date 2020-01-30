@@ -358,6 +358,8 @@ header{
     color: #fff;
 }
 
+
+
 .nav ul{
     position: relative;
 }
@@ -371,14 +373,26 @@ header{
     display: none;
     width: 100%;
     position: absolute;
-    max-height: 150px;
-    max-width: 250px;
+    top: 65px;
+    /* left: 170px; */
+    max-height: 400px;
+    max-width: 300px;
     background-color: #fff;
-    z-index: 10px;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    text-align: left;
+    padding: 5px 24px 24px 24px;
 }
+
+.nav .weight{
+    font-weight: 600;
+}
+
 
 .nav li ul a{
     color: #24292e;
+    font-size: 14px;
 }
 
 .nav li:hover ul{
@@ -388,4 +402,17 @@ header{
 .nav li:hover li{
     display: none;
     display: block;
+}
+
+ /* .nav .separate{
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    font-size: 200%;
+}  */
+
+.mar{
+    margin-top: 30px;
 }

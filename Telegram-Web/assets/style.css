@@ -121,6 +121,7 @@ body{
     outline: none;
     background: none;
     resize: none;
+    cursor: pointer;
 }
 
 .logo_next{
@@ -132,6 +133,7 @@ body{
     right: 580px;
     margin-left: 12px;
     margin-top: -1px;
+    cursor: pointer;
     
 }
 
@@ -164,5 +166,16 @@ body{
     outline: none;
     background: none;
     background: transparent;
-    width: 100%;
+    width: 274px;
+}
+select{
+    width: 295px;
+    border-bottom: 1px solid grey ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 5px;
+    outline: none;
+    -webkit-appearance: none;
+    
 }

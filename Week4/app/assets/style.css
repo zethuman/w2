@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px auto;
+    justify-content: center;
+}
+
+.page{
+    /* position: fixed; */
+    height: 100%;
+    max-height: 730px;
+    justify-content: center;
+}
+
+.header-block{
+    width: 992px;
+    margin: 0 auto;
+    
+}
+
+h1{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    float: left;
+    padding: 10px 0 10px 0px;
+    margin: auto;
+    cursor: pointer;
+}
+
+h1:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.wrapper{
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    height: 60px;
+    background: #1976d2;
+    margin-bottom: 20px;
+}
+
+.container{
+    height: 100%;
+    float: left;
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.container h2{
+    float: left;
+    height: 5%;
+    float: left;
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 16px 16px 16px 16px;
+    position: relative;
+    top: 70px;
+    left: 255px;
+}
+
+h2{
+    font-size: 26px;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.checkpoint{
+    background-color: #fff;
+    float: right;
+    padding: 8px 16px 8px 16px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkpoint:hover{
+    opacity: 0.7;
+    transition: .2s;
+}
+
+.checkpoint i{
+    color: blue;
+    margin: 0px 16px 0px 0px;
+    font-size: 24px;
+}
+
+.btn{
+    /* padding: 1px 0px 5px; */
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #FFF;
+    color: #1976d2;
+}
+
+
+
+

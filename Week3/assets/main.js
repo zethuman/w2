@@ -8,8 +8,10 @@ const LINE_THROUGH = "lineThrough";
 
 let LIST,id;
 
-let data = localStorage.getItem("TODO");
+//-------------------------------------------------------------------------------------------------------------------------------------------------
 
+let data = localStorage.getItem("TODO");
+ 
 if(data){
     LIST = JSON.parse(data);
     id = LIST.length;
@@ -26,6 +28,7 @@ function loadList(array){
     });
 }
 
+//----------------------------------------------------------------------------------------------------------------------------------------------
 
 function addToDo(toDo, id, done,trash){
 
@@ -72,6 +75,8 @@ function deleteToDo(element){
 //      console.log(position + " " + newInput);    
 // }
 
+
+//----------------------------------------------------------------------------------------------------------------------------------------------
 
 list.addEventListener("click", function(event){
     const element = event.target;

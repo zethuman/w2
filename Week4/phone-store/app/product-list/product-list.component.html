@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="head_container">
+    <h1 class="head_text">
+       The Phone Store 
+    </h1>
+<img src="https://store.storeimages.cdn-apple.com/8756
+/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/xs/iphone-xs-gallery-
+2018-5?wid=2000&hei=1536&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1535396224102" class="img_logo">
+    </div>
+</div>
+
+<div class="bottom_img">
+    <div class="samples">
+        <img src="https://thegoodguys.sirv.com/products/50050727/50050727_535681.PNG?scale.height=505&scale.width=773&canvas.height=505&canvas.width=773&canvas.opacity=0&format=png&png.optimize=true" class="small_img">
+        <img src="https://thegoodguys.sirv.com/products/50064324/50064324_605474.PNG?scale.height=505&scale.width=773&canvas.height=505&canvas.width=773&canvas.opacity=0&format=png&png.optimize=true" class="small_img">
+        <img src="https://thegoodguys.sirv.com/products/50035051/50035051_529913.PNG?scale.height=505&scale.width=773&canvas.height=505&canvas.width=773&canvas.opacity=0&format=png&png.optimize=true" class="small_img">
+    </div>
+
+</div>
+
+    <hr>
+
+<div>
+
+<h2>Products</h2>
+<div *ngFor="let product of products" class = "products_list">
+    
+    <!-- <div ng-repeat="(i, slide) in slides">
+        <img ng-src="{{ slide.image }}" />
+  </div> -->
+
+    <a href="#" *ngIf = "product.imgUrl">
+
+        <img src="{{product.imgUrl}}" class="product_images">
+    </a>
+
+    <h3>
+        <a [title] = "product.name + ' details'" href="{{product.aliexpressUrl}}" target="_blank">
+        {{ product.name }}
+        </a>
+    </h3>
+
+    <p *ngIf="product.price" class="price">
+        {{ "$" + product.price + ".00"}}
+    </p>
+
+    <p *ngIf="product.rating" class="rate">
+        Rating: {{product.rating}}
+    </p>
+  
+    <p *ngIf="product.description">
+        Description: {{ product.description }}
+      </p>
+    
+    <a href="https://telegram.me/share/url?url={{ product.aliexpressUrl }}&text=" target="_blank">
+        <i class="fab fa-telegram-plane fa-2x" style="color:#0088cc;"></i>
+    </a>
+
+    <a *ngIf="product.aliexpressUrl" href="https://web.whatsapp.com/send?text={{ product.aliexpressUrl }}"  data-action="share/whatsapp/share" target="_blank" class="shareww">
+        <i class="fab fa-whatsapp-square fa-2x" style="color: #25d366;"></i>
+      </a>
+
+      <button (click)="buy()" class="buy">
+        Buy Now
+      </button>
+
+      <app-product-alerts
+      [product]="product"
+      (notify)="onNotify()">
+    </app-product-alerts>
+    
+    <hr>
+  </div>
+
+</div>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
